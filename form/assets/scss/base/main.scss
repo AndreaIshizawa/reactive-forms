@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 62.5%; 
+}
+
+body{
+    font-family: 'Prompt', sans-serif;
+    background-color: $bg;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    color: $black;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+p{
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+    &:hover{
+        color: $link;
+        transition: all ease 0.3s;
+    }
+}
+
+hr{
+    opacity: 0.25;
+}
+
+footer{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    color: $light-gray;
+    font-size: 1.6rem;
+    z-index: 20;
+    
+    @include media($mobile){
+        position: absolute;
+        bottom: 0.5rem;
+    }
+}
