@@ -1,0 +1,11 @@
+$mobile: '(min-width:48rem)';
+$tablet-p: '(min-width: 768px)';
+$tablet-l: '(min-width: 992px)';
+$desktop: '(min-width: 1200px)';
+$desktop-g: '(min-width: 1600px)';
+
+@mixin media ($media) {
+    @media all and #{$media}{
+        @content;
+    }
+}
