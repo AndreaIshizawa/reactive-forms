@@ -1,0 +1,24 @@
+.container{
+    padding: 0 15px;
+    margin: auto;
+    
+    &-fluid{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    @include media($tablet-p){
+        width: 720px;
+    }
+    @include media($tablet-l){
+        width: 960px;
+    }
+    @include media($desktop){
+        width: 1170px;
+    }
+    @include media($desktop-g){
+        width: 1440px;
+    }
+    
+
+}
